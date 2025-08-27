@@ -1,0 +1,24 @@
+[
+  {
+    "firstname": "Joao",
+    "lastname": "Silva",
+    "totalprice": 123,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2025-01-01",
+      "checkout": "2025-01-10"
+    },
+    "additionalneeds": "Breakfast"
+  },
+  {
+    "firstname": "Maria",
+    "lastname": "Souza",
+    "totalprice": 200,
+    "depositpaid": false,
+    "bookingdates": {
+      "checkin": "2025-02-01",
+      "checkout": "2025-02-15"
+    },
+    "additionalneeds": "Dinner"
+  }
+]

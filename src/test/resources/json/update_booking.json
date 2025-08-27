@@ -1,0 +1,11 @@
+{
+  "firstname": "Manoel",
+  "lastname": "Souza",
+  "totalprice": 200,
+  "depositpaid": false,
+  "bookingdates": {
+    "checkin": "2025-08-23",
+    "checkout": "2025-08-30"
+  },
+  "additionalneeds": "Dinner"
+}

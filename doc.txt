@@ -1,0 +1,27 @@
+1. Usar variáveis de ambiente
+
+Você pode definir no sistema:
+
+export BOOKER_USER=admin
+export BOOKER_PASS=password123
+
+E no Java ler assim:
+String username = System.getenv("BOOKER_USER");
+String password = System.getenv("BOOKER_PASS");
+
+
+2. Usar arquivo externo (config.properties)
+
+Crie um arquivo em src/test/resources/config.properties:
+
+booker.user=admin
+booker.pass=password123
+
+
+No Java, você carrega:
+
+Properties props = new Properties();
+props.load(getClass().getClassLoader().getResourceAsStream("config.properties"));
+
+String username = props.getProperty("booker.user");
+String password = props.getProperty("booker.pass");

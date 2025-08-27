@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tests.BookingTest" time="7.39" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\junior\Desktop\Squad142\restfulbooker-Sprint-5-API\target\test-classes;C:\Users\junior\Desktop\Squad142\restfulbooker-Sprint-5-API\target\classes;C:\Users\junior\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\junior\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\junior\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\junior\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\junior\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\junior\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\junior\.m2\repository\io\github\cdimascio\dotenv-java\3.0.0\dotenv-java-3.0.0.jar;C:\Users\junior\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\junior\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\junior\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\junior\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\junior\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\junior\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\junior\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\junior\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\junior\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\junior\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\junior\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\junior\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\junior\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\junior\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\junior\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\junior\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\junior\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\junior\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\junior\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\junior\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\junior\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\junior\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\junior\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\junior\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\junior\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\junior\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\junior\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\junior\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\junior\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\junior\AppData\Local\Temp\surefire16258466360831648146\surefirebooter-20250826224110086_3.jar C:\Users\junior\AppData\Local\Temp\surefire16258466360831648146 2025-08-26T22-41-09_936-jvmRun1 surefire-20250826224110086_1tmp surefire_0-20250826224110086_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\junior\Desktop\Squad142\restfulbooker-Sprint-5-API\target\test-classes;C:\Users\junior\Desktop\Squad142\restfulbooker-Sprint-5-API\target\classes;C:\Users\junior\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\junior\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\junior\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\junior\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\junior\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\junior\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\junior\.m2\repository\io\github\cdimascio\dotenv-java\3.0.0\dotenv-java-3.0.0.jar;C:\Users\junior\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\junior\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\junior\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\junior\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\junior\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\junior\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\junior\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\junior\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\junior\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\junior\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\junior\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\junior\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\junior\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\junior\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\junior\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\junior\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\junior\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\junior\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\junior\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\junior\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\junior\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\junior\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\junior\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\junior\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\junior\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\junior\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\junior\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\junior\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\junior\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\junior\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\junior\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\junior"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\junior\Desktop\Squad142\restfulbooker-Sprint-5-API"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\junior\AppData\Local\Temp\surefire16258466360831648146\surefirebooter-20250826224110086_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.5+9-LTS-239"/>
+    <property name="user.name" value="junior"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\junior\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\junior\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.5"/>
+    <property name="user.dir" value="C:\Users\junior\Desktop\Squad142\restfulbooker-Sprint-5-API"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\junior\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\junior\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Program Files\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Program Files\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Users\junior\AppData\Local\Android\Sdk\platform-tools;C:\Users\junior\AppData\Local\Android\Sdk\emulator;C:\Users\junior\AppData\Local\Android\Sdk\tools;C:\Users\junior\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\Java\jdk-21\bin);C:\Users\junior\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\junior\AppData\Local\Programs\Python\Python311;C:\Users\junior\AppData\Local\Programs\Python\Python313\Scripts;C:\Users\junior\AppData\Local\Programs\Python\Python313;C:\Users\junior\AppData\Local\Programs\Python\Launcher;C:\Users\junior\AppData\Local\Microsoft\WindowsApps;C:\Program Files\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Users\junior\AppData\Roaming\npm;C:\Users\junior\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\junior\AppData\Local\GitHubDesktop\bin;C:\Users\junior\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.5+9-LTS-239"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testCreateToken" classname="tests.BookingTest" time="2.475">
+    <system-out><![CDATA[✅ Token gerado com sucesso:
+]]></system-out>
+  </testcase>
+  <testcase name="testGetBookingIds" classname="tests.BookingTest" time="0.797">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Length: 1584
+Content-Type: application/json; charset=utf-8
+Date: Wed, 27 Aug 2025 01:41:09 GMT
+Etag: W/"630-Z1n/eppxGi6LWpy23je1ZoAGvAQ"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=j1mhuXYjPPqsKKOIuGUf5caVDB%2F6vBeRAKl3TQSXIM4%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1756258869"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=j1mhuXYjPPqsKKOIuGUf5caVDB%2F6vBeRAKl3TQSXIM4%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1756258869"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+[
+    {
+        "bookingid": 53
+    },
+    {
+        "bookingid": 56
+    },
+    {
+        "bookingid": 26
+    },
+    {
+        "bookingid": 70
+    },
+    {
+        "bookingid": 16
+    },
+    {
+        "bookingid": 4
+    },
+    {
+        "bookingid": 19
+    },
+    {
+        "bookingid": 25
+    },
+    {
+        "bookingid": 48
+    },
+    {
+        "bookingid": 79
+    },
+    {
+        "bookingid": 13
+    },
+    {
+        "bookingid": 61
+    },
+    {
+        "bookingid": 8
+    },
+    {
+        "bookingid": 113
+    },
+    {
+        "bookingid": 69
+    },
+    {
+        "bookingid": 103
+    },
+    {
+        "bookingid": 22
+    },
+    {
+        "bookingid": 38
+    },
+    {
+        "bookingid": 66
+    },
+    {
+        "bookingid": 23
+    },
+    {
+        "bookingid": 109
+    },
+    {
+        "bookingid": 90
+    },
+    {
+        "bookingid": 85
+    },
+    {
+        "bookingid": 51
+    },
+    {
+        "bookingid": 2
+    },
+    {
+        "bookingid": 52
+    },
+    {
+        "bookingid": 27
+    },
+    {
+        "bookingid": 91
+    },
+    {
+        "bookingid": 65
+    },
+    {
+        "bookingid": 75
+    },
+    {
+        "bookingid": 40
+    },
+    {
+        "bookingid": 81
+    },
+    {
+        "bookingid": 3
+    },
+    {
+        "bookingid": 92
+    },
+    {
+        "bookingid": 47
+    },
+    {
+        "bookingid": 80
+    },
+    {
+        "bookingid": 49
+    },
+    {
+        "bookingid": 5
+    },
+    {
+        "bookingid": 1
+    },
+    {
+        "bookingid": 54
+    },
+    {
+        "bookingid": 76
+    },
+    {
+        "bookingid": 94
+    },
+    {
+        "bookingid": 59
+    },
+    {
+        "bookingid": 64
+    },
+    {
+        "bookingid": 30
+    },
+    {
+        "bookingid": 15
+    },
+    {
+        "bookingid": 28
+    },
+    {
+        "bookingid": 73
+    },
+    {
+        "bookingid": 24
+    },
+    {
+        "bookingid": 10
+    },
+    {
+        "bookingid": 97
+    },
+    {
+        "bookingid": 7
+    },
+    {
+        "bookingid": 62
+    },
+    {
+        "bookingid": 29
+    },
+    {
+        "bookingid": 42
+    },
+    {
+        "bookingid": 87
+    },
+    {
+        "bookingid": 114
+    },
+    {
+        "bookingid": 95
+    },
+    {
+        "bookingid": 104
+    },
+    {
+        "bookingid": 18
+    },
+    {
+        "bookingid": 111
+    },
+    {
+        "bookingid": 45
+    },
+    {
+        "bookingid": 50
+    },
+    {
+        "bookingid": 99
+    },
+    {
+        "bookingid": 9
+    },
+    {
+        "bookingid": 58
+    },
+    {
+        "bookingid": 63
+    },
+    {
+        "bookingid": 88
+    },
+    {
+        "bookingid": 37
+    },
+    {
+        "bookingid": 39
+    },
+    {
+        "bookingid": 6
+    },
+    {
+        "bookingid": 43
+    },
+    {
+        "bookingid": 108
+    },
+    {
+        "bookingid": 112
+    },
+    {
+        "bookingid": 32
+    },
+    {
+        "bookingid": 21
+    },
+    {
+        "bookingid": 31
+    },
+    {
+        "bookingid": 100
+    },
+    {
+        "bookingid": 84
+    },
+    {
+        "bookingid": 20
+    },
+    {
+        "bookingid": 44
+    },
+    {
+        "bookingid": 11
+    },
+    {
+        "bookingid": 106
+    },
+    {
+        "bookingid": 33
+    },
+    {
+        "bookingid": 14
+    },
+    {
+        "bookingid": 78
+    },
+    {
+        "bookingid": 41
+    },
+    {
+        "bookingid": 96
+    },
+    {
+        "bookingid": 107
+    },
+    {
+        "bookingid": 57
+    },
+    {
+        "bookingid": 35
+    },
+    {
+        "bookingid": 12
+    },
+    {
+        "bookingid": 72
+    }
+]
+✅ Lista de bookings consultada com sucesso!
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateBookingFromJSON" classname="tests.BookingTest" time="0.76">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token= 4b5d4138250b7b2
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Josep",
+    "lastname": "Silva",
+    "totalprice": 123,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2025-08-23",
+        "checkout": "2025-08-30"
+    },
+    "additionalneeds": "Breakfast"
+}
+HTTP/1.1 200 OK
+Content-Length: 198
+Content-Type: application/json; charset=utf-8
+Date: Wed, 27 Aug 2025 01:41:10 GMT
+Etag: W/"c6-fUEfYE9Pofc319Rc/arFvT4vYwQ"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=mkEvW39ZgnQ1yDl6DHIRcEhfD21NWmmkvEVtiSty1Sc%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1756258870"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=mkEvW39ZgnQ1yDl6DHIRcEhfD21NWmmkvEVtiSty1Sc%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1756258870"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+{
+    "bookingid": 120,
+    "booking": {
+        "firstname": "Josep",
+        "lastname": "Silva",
+        "totalprice": 123,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2025-08-23",
+            "checkout": "2025-08-30"
+        },
+        "additionalneeds": "Breakfast"
+    }
+}
+✅ Booking criado com ID: 120 (token: 4b5d4138250b7b2)
+]]></system-out>
+  </testcase>
+  <testcase name="testGetBooking" classname="tests.BookingTest" time="0.778">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/120
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 4b5d4138250b7b2
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Length: 170
+Content-Type: application/json; charset=utf-8
+Date: Wed, 27 Aug 2025 01:41:11 GMT
+Etag: W/"aa-/Pbv0l5xWU4OhqYqrXqtPCz3ZoQ"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=27bvCVO2dNX4qx8Wo38HRSIeasijGNO7lyHQD9LQqfU%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1756258871"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=27bvCVO2dNX4qx8Wo38HRSIeasijGNO7lyHQD9LQqfU%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1756258871"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+{
+    "firstname": "Josep",
+    "lastname": "Silva",
+    "totalprice": 123,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2025-08-23",
+        "checkout": "2025-08-30"
+    },
+    "additionalneeds": "Breakfast"
+}
+✅ Booking consultado com sucesso!
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateBookingFromJSON" classname="tests.BookingTest" time="0.786">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/120
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token= 4b5d4138250b7b2
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Manoel",
+    "lastname": "Souza",
+    "totalprice": 200,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2025-08-23",
+        "checkout": "2025-08-30"
+    },
+    "additionalneeds": "Dinner"
+}
+HTTP/1.1 200 OK
+Content-Length: 169
+Content-Type: application/json; charset=utf-8
+Date: Wed, 27 Aug 2025 01:41:12 GMT
+Etag: W/"a9-En225Qn749ME9c4qxUwtA4CkbW4"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=wRJSWAwBpjCD14M9fGEK9L87oCQn9pm3sAKaStfIAK0%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1756258872"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=wRJSWAwBpjCD14M9fGEK9L87oCQn9pm3sAKaStfIAK0%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1756258872"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+{
+    "firstname": "Manoel",
+    "lastname": "Souza",
+    "totalprice": 200,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2025-08-23",
+        "checkout": "2025-08-30"
+    },
+    "additionalneeds": "Dinner"
+}
+✅ Booking atualizado ID: 120 com os dados: {
+  "firstname": "Manoel",
+  "lastname": "Souza",
+  "totalprice": 200,
+  "depositpaid": false,
+  "bookingdates": {
+    "checkin": "2025-08-23",
+    "checkout": "2025-08-30"
+  },
+  "additionalneeds": "Dinner"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteBooking" classname="tests.BookingTest" time="1.399">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/120
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token= 4b5d4138250b7b2
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 201 Created
+Content-Length: 7
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 27 Aug 2025 01:41:13 GMT
+Etag: W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Xy%2BRnKtyfYbceIf48aTNvuobfs96D%2FDKKfpdzO599j8%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1756258873"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=Xy%2BRnKtyfYbceIf48aTNvuobfs96D%2FDKKfpdzO599j8%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1756258873"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+Created
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/120
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token= 4b5d4138250b7b2
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Content-Length: 9
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 27 Aug 2025 01:41:13 GMT
+Etag: W/"9-0gXL1ngzMqISxa6S1zx3F4wtLyg"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Xy%2BRnKtyfYbceIf48aTNvuobfs96D%2FDKKfpdzO599j8%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1756258873"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=Xy%2BRnKtyfYbceIf48aTNvuobfs96D%2FDKKfpdzO599j8%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1756258873"
+Server: Heroku
+Via: 1.1 heroku-router
+X-Powered-By: Express
+
+Not Found
+✅ Booking deletado com sucesso! (ID: 120 | token: 4b5d4138250b7b2)
+]]></system-out>
+  </testcase>
+</testsuite>
